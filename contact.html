@@ -24,16 +24,14 @@
 
 <body class="font-Sora overflow-x-hidden">
     <!-- navbar and hero section -->
-    <section
-        class="relative flex flex-col min-h-screen bg-[url('https://plus.unsplash.com/premium_vector-1759965562293-1768da77985b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGNvbnRhY3QlMjB1c3xlbnwwfHwwfHx8MA%3D%3D')] bg-cover bg-center ">
+    <section class="relative flex flex-col min-h-screen bg-[url('https://plus.unsplash.com/premium_vector-1759965562293-1768da77985b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGNvbnRhY3QlMjB1c3xlbnwwfHwwfHx8MA%3D%3D')] bg-cover bg-center ">
         <!-- black overlay -->
         <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30 pointer-events-none"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none">
         </div>
         <!-- black ovrelay ends -->
         <!-- navbar starts -->
-        <nav id="navbar"
-            class="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-10 lg:px-16 transition-all duration-300">
+        <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-10 lg:px-16 transition-all duration-300">
             <div class="container mx-auto flex items-center justify-between">
                 <a href="#" class="flex items-center gap-2">
                     <div class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center shrink-0">
@@ -47,7 +45,7 @@
                 </a>
                 <!-- desktoop ul links starts-->
                 <ul class="hidden md:flex items-center gap-5">
-                    <li><a href="/" class="nav-link relative text-white/80 hover:text-orange-500 text-sm font-medium transition-colors duration-200 flex items-center gap-1">Home</a>
+                    <li><a href="index.html" class="nav-link relative text-white/80 hover:text-orange-500 text-sm font-medium transition-colors duration-200 flex items-center gap-1">Home</a>
                     </li>
                     <li class="dropdown-trigger relative group">
                         <a href="Courses.html" class="nav-link relative text-white/80 hover:text-orange-500 text-sm font-medium transition-colors duration-200 flex items-center gap-1">All Courses
@@ -56,154 +54,106 @@
                             </svg>
                         </a>
                         <!-- dropsown starts -->
-<div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[980px] bg-white rounded-2xl shadow-2xl border border-gray-100 z-[999] overflow-hidden opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-all duration-300">     
+<div class="absolute top-full left-3/2 -translate-x-1/2  w-[980px] bg-white rounded-2xl shadow-2xl border border-gray-100 z-[999] overflow-hidden opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-all duration-300">     
                             <div class="grid grid-cols-3 divide-x divide-gray-100">
                                 <div class="col-span-2 p-5 grid grid-cols-2 gap-x-2 gap-y-1">
                                     <div>
-                                        <p
-                                            class="text-gray-400 text-[12px] uppercase tracking-widest font-semibold px-3 mb-2">
-                                            Pages</p>
-                                        <a href="Courses.html"
-                                            class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
-                                            <span
-                                                class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                    viewBox="0 -960 960 960" width="24px" fill="#E8622a">
-                                                    <path
-                                                        d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z" />
+                                        <p class="text-gray-400 text-[12px] uppercase tracking-widest font-semibold px-3 mb-2"> Pages</p>
+                                        <a href="Courses.html" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
+                                            <span class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a">
+                                                    <path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z" />
                                                 </svg>
                                             </span>
-                                            <span class="text-gray-700  text-sm font-medium transition-colors">All
-                                                courses</span>
+                                            <span class="text-gray-700  text-sm font-medium transition-colors">All courses</span>
                                         </a>
-                                        <a href="#"
-                                            class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
-                                            <span
-                                                class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                    viewBox="0 -960 960 960" width="24px" fill="#E8622a">
-                                                    <path
-                                                        d="M480-160q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740v484q51-32 107-48t113-16q36 0 70.5 6t69.5 18v-480q15 5 29.5 10.5T898-752q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59Zm80-200v-380l200-200v400L560-360Zm-160 65v-396q-33-14-68.5-21.5T260-720q-37 0-72 7t-68 21v397q35-13 69.5-19t70.5-6q36 0 70.5 6t69.5 19Zm0 0v-396 396Z" />
+                                        <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
+                                            <span class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a">
+                                                    <path d="M480-160q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740v484q51-32 107-48t113-16q36 0 70.5 6t69.5 18v-480q15 5 29.5 10.5T898-752q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59Zm80-200v-380l200-200v400L560-360Zm-160 65v-396q-33-14-68.5-21.5T260-720q-37 0-72 7t-68 21v397q35-13 69.5-19t70.5-6q36 0 70.5 6t69.5 19Zm0 0v-396 396Z" />
                                                 </svg>
                                             </span>
-                                            <span class="text-gray-700  text-sm font-medium transition-colors">Single
-                                                courses</span>
+                                            <span class="text-gray-700  text-sm font-medium transition-colors">Single courses</span>
                                         </a>
-                                        <a href="#"
-                                            class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
-                                            <span
-                                                class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
+                                        <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
+                                            <span class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
                                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px"
                                                     viewBox="0 -960 960 960" width="24px" fill="#E8622a">
-                                                    <path
-                                                        d="M80-160v-640h800v640H80Zm80-80h640v-480H160v480Zm0 0v-480 480Zm160-40h80v-40h40q17 0 28.5-11.5T480-360v-120q0-17-11.5-28.5T440-520H320v-40h160v-80h-80v-40h-80v40h-40q-17 0-28.5 11.5T240-600v120q0 17 11.5 28.5T280-440h120v40H240v80h80v40Zm320-30 80-80H560l80 80Zm-80-250h160l-80-80-80 80Z" />
+                                                    <path d="M80-160v-640h800v640H80Zm80-80h640v-480H160v480Zm0 0v-480 480Zm160-40h80v-40h40q17 0 28.5-11.5T480-360v-120q0-17-11.5-28.5T440-520H320v-40h160v-80h-80v-40h-80v40h-40q-17 0-28.5 11.5T240-600v120q0 17 11.5 28.5T280-440h120v40H240v80h80v40Zm320-30 80-80H560l80 80Zm-80-250h160l-80-80-80 80Z" />
                                                 </svg>
                                             </span>
-                                            <span class="text-gray-700  text-sm font-medium transition-colors">Our
-                                                Pricing</span>
+                                            <span class="text-gray-700  text-sm font-medium transition-colors">Our Pricing</span>
                                         </a>
-                                        <a href="#"
-                                            class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
-                                            <span
-                                                class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                    viewBox="0 -960 960 960" width="24px" fill="#E8622a">
+                                        <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
+                                            <span class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a">
                                                     <path
                                                         d="M400-400q-50 0-85-35t-35-85q0-22 7-41.5t21-35.5q-4-10-6-21t-2-22q0-38 20.5-67.5T374-751q20-23 47-36t59-13q32 0 59 13t47 36q33 14 53.5 43.5T660-640q0 11-2 22t-6 21q14 16 21 35.5t7 41.5q0 50-35 85t-85 35H400Zm0-80h160q17 0 28.5-12t11.5-28q0-7-2.5-13t-7.5-12q-11-13-14.5-25.5T572-594q0-16 4-27.5t4-18.5q0-12-7-22t-18-15q-9-4-16.5-9T525-699q-5-6-16.5-13.5T480-720q-17 0-28.5 8T435-698q-6 7-13.5 12t-16.5 9q-11 5-18 15t-7 22q0 7 4 18.5t4 27.5q0 11-3.5 23.5T370-545q-5 6-7.5 12t-2.5 13q0 16 11.5 28t28.5 12ZM160-80v-112q0-34 17.5-62.5T224-298q62-31 126-46.5T480-360q66 0 130 15.5T736-298q29 15 46.5 43.5T800-192v112H160Zm80-80h480v-32q0-11-5.5-20T700-226q-54-27-109-40.5T480-280q-56 0-111 13.5T260-226q-9 5-14.5 14t-5.5 20v32Zm240 0Zm0-320Z" />
                                                 </svg>
                                             </span>
-                                            <span class="text-gray-700  text-sm font-medium transition-colors">Single
-                                                Instuctor</span>
+                                            <span class="text-gray-700  text-sm font-medium transition-colors">Single Instuctor</span>
                                         </a>
-                                        <a href="#"
-                                            class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
-                                            <span
-                                                class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                    viewBox="0 -960 960 960" width="24px" fill="#E8622a">
-                                                    <path
-                                                        d="m160-419 101-101-101-101L59-520l101 101Zm540-21 100-160 100 160H700Zm-220-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-160q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640Zm0 40ZM0-240v-63q0-44 44.5-70.5T160-400q13 0 25 .5t23 2.5q-14 20-21 43t-7 49v65H0Zm240 0v-65q0-65 66.5-105T480-450q108 0 174 40t66 105v65H240Zm560-160q72 0 116 26.5t44 70.5v63H780v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5Zm-320 30q-57 0-102 15t-53 35h311q-9-20-53.5-35T480-370Zm0 50Z" />
+                                        <a href="#"class="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
+                                            <span class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a">
+                                                    <path d="m160-419 101-101-101-101L59-520l101 101Zm540-21 100-160 100 160H700Zm-220-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-160q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640Zm0 40ZM0-240v-63q0-44 44.5-70.5T160-400q13 0 25 .5t23 2.5q-14 20-21 43t-7 49v65H0Zm240 0v-65q0-65 66.5-105T480-450q108 0 174 40t66 105v65H240Zm560-160q72 0 116 26.5t44 70.5v63H780v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5Zm-320 30q-57 0-102 15t-53 35h311q-9-20-53.5-35T480-370Zm0 50Z" />
                                                 </svg>
                                             </span>
-                                            <span class="text-gray-700  text-sm font-medium transition-colors">All
-                                                instructors</span>
+                                            <span class="text-gray-700  text-sm font-medium transition-colors">All instructors</span>
                                         </a>
                                     </div>
                                     <!-- right links -->
                                     <div>
-                                        <p
-                                            class="text-gray-400 text-[12px] font-semibold uppercase tracking-widest px-3 mb-2">
-                                            Popular Courses</p>
-                                        <a href="#"
-                                            class="flex items-center gap-3 px-2 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
-                                            <span
-                                                class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
+                                        <p class="text-gray-400 text-[12px] font-semibold uppercase tracking-widest px-3 mb-2"> Popular Courses</p>
+                                        <a href="#" class="flex items-center gap-3 px-2 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
+                                            <span class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
                                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px"
                                                     viewBox="0 -960 960 960" width="24px" fill="#E8622a">
                                                     <path
                                                         d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z" />
                                                 </svg>
                                             </span>
-                                            <span
-                                                class="text-gray-700  text-sm font-medium transition-colors">Introduction
-                                                to python</span>
+                                            <span class="text-gray-700  text-sm font-medium transition-colors">Introduction to python</span>
                                         </a>
-                                        <a href="#"
-                                            class="flex items-center gap-3 px-2 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
-                                            <span
-                                                class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
+                                        <a href="#" class="flex items-center gap-3 px-2 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
+                                            <span class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
                                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px"
                                                     viewBox="0 -960 960 960" width="24px" fill="#E8622a">
-                                                    <path
-                                                        d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z" />
+                                                    <path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z" />
                                                 </svg>
                                             </span>
-                                            <span class="text-gray-700  text-sm font-medium transition-colors">Advance
-                                                Excel for Data Analysis</span>
+                                            <span class="text-gray-700  text-sm font-medium transition-colors">Advance Excel for Data Analysis</span>
                                         </a>
-                                        <a href="#"
-                                            class="flex items-center gap-3 px-2 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
-                                            <span
-                                                class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
+                                        <a href="#" class="flex items-center gap-3 px-2 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
+                                            <span class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
                                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px"
                                                     viewBox="0 -960 960 960" width="24px" fill="#E8622a">
-                                                    <path
-                                                        d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z" />
+                                                    <path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z" />
                                                 </svg>
                                             </span>
-                                            <span class="text-gray-700  text-sm font-medium transition-colors">Project
-                                                Management Essentials</span>
+                                            <span class="text-gray-700  text-sm font-medium transition-colors">Project Management Essentials</span>
                                         </a>
-                                        <a href="#"
-                                            class="flex items-center gap-3 px-2 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
-                                            <span
-                                                class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
+                                        <a href="#" class="flex items-center gap-3 px-2 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
+                                            <span class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
                                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px"
                                                     viewBox="0 -960 960 960" width="24px" fill="#E8622a">
-                                                    <path
-                                                        d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z" />
+                                                    <path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z" />
                                                 </svg>
                                             </span>
-                                            <span class="text-gray-700  text-sm font-medium transition-colors">SEO
-                                                optimization techniques</span>
+                                            <span class="text-gray-700  text-sm font-medium transition-colors">SEO optimization techniques</span>
                                         </a>
-                                        <a href="#"
-                                            class="flex items-center gap-3 px-2 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
-                                            <span
-                                                class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
+                                        <a href="#" class="flex items-center gap-3 px-2 py-2 rounded-xl hover:bg-orange-50 group transition-colors">
+                                            <span class="w-6 h-6 rounded-md bg-orange-100 flex items-center justify-center shrink-0">
                                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px"
                                                     viewBox="0 -960 960 960" width="24px" fill="#E8622a">
-                                                    <path
-                                                        d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z" />
+                                                    <path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z" />
                                                 </svg>
                                             </span>
-                                            <span class="text-gray-700  text-sm font-medium transition-colors">Creative
-                                                Workshops</span>
+                                            <span class="text-gray-700  text-sm font-medium transition-colors">Creative Workshops</span>
                                         </a>
                                     </div>
                                 </div>
-                                <div
-                                    class="relative overflow-hidden bg-[#f5c518] p-5 flex flex-col justify-between min-h-[260px]">
+                                <div class="relative overflow-hidden bg-[#f5c518] p-5 flex flex-col justify-between min-h-[260px]">
                                     <!-- blobs starts here -->
                                     <div class="absolute -top-4 -right-4 w-24 h-24 rounded-full bg-white/25"></div>
                                     <div class="absolute bottom-16 -left-4 w-16 h-16 rounded-full bg-white/20"></div>
@@ -248,9 +198,7 @@
                 </ul>
                 <!-- menubbar icon starts -->
                 <div class="flex items-center gap-3">
-                    <a href="#"
-                        class="hidden sm:inline-block bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:-translate-y-px">Start
-                        Learning</a>
+                    <a href="#" class="hidden sm:inline-block bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:-translate-y-px">Start Learning</a>
                     <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-1" aria-label="Open menu">
                         <span class="block w-6 h-0.5 bg-current rounded"></span>
                         <span class="block w-6 h-0.5 bg-current rounded"></span>
@@ -262,48 +210,36 @@
         </nav>
         <!-- navbar ends for destop view -->
         <!-- Mobile menu starts -->
-        <div id="mobile-menu"
-            class="hidden fixed inset-0 z-[60] bg-black/90 flex-col px-6 pt-10 gap-5 opacity-0 scale-95 transition-all duration-300 ">
+        <div id="mobile-menu" class="hidden fixed inset-0 z-[60] bg-black/90 flex-col px-6 pt-10 gap-5 opacity-0 scale-95 transition-all duration-300 ">
             <div class="flex items-center justify-between">
                 <a href="#" class="flex items-center gap-2">
                     <div class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            fill="#FFFFFF">
-                            <path
-                                d="M360-400h260q42 0 71-29.5t29-71.5q0-42-30-71t-72-29q-8-51-47-85t-91-34q-41 0-75 22t-51 59q-48 2-81 36.5T240-520q0 50 35 85t85 35Z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                            <path d="M360-400h260q42 0 71-29.5t29-71.5q0-42-30-71t-72-29q-8-51-47-85t-91-34q-41 0-75 22t-51 59q-48 2-81 36.5T240-520q0 50 35 85t85 35Z" />
                         </svg>
                     </div>
                     <span class="font-bold text-white text-white tracking-tight">SkillBloom</span>
                 </a>
                 <button id="close-menu" class="text-white/70 hover:text-white transition-colors ">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#FFFFFF">
-                        <path
-                            d="m336-280-56-56 144-144-144-143 56-56 144 144 143-144 56 56-144 143 144 144-56 56-143-144-144 144Z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                        <path d="m336-280-56-56 144-144-144-143 56-56 144 144 143-144 56 56-144 143 144 144-56 56-143-144-144 144Z" />
                     </svg>
                 </button>
             </div>
-            <a href="/index.html"
-                class="text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">Home</a>
-            <a href="/Courses.html" class="text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">All
-                courses</a>
-            <a href="/aboutus.html"
-                class="text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">About us</a>
-            <a href="/Instructor.html"
-                class="text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">Instructors</a>
+            <a href="index.html" class="text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">Home</a>
+            <a href="Courses.html" class="text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">All courses</a>
+            <a href="aboutus.html" class="text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">About us</a>
+            <a href="Instructor.html" class="text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">Instructors</a>
             <a href="Blog.html" class="text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">Blog</a>
-            <a href="/contact.html"
-                class="text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">contact</a>
-            <a href="#"
-                class="mt-4 self-start bg-orange-500 hover:bg-orange-600 text-white font-semibold text-white px-6 py-3 rounded-lg transition-colors">Start
-                lerning</a>
+            <a href="contact.html" class="text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">contact</a>
+            <a href="#" class="mt-4 self-start bg-orange-500 hover:bg-orange-600 text-white font-semibold text-white px-6 py-3 rounded-lg transition-colors">Start Learning</a>
         </div>
         <!-- moble menu ends  -->
         <!-- hero section starts -->
         <div class="relative z-10 flex flex-1 px-6 md:px-10 lg:px-16 items-center justify-center w-full pt-32">
             <div class="container mx-auto">
                 <h1 class="font-bold text-white leading-tight tracking-tight text-5xl md:text-6xl mb-5">Contact Us</h1>
-                <p class="text-white/65 text-white lesding-relaxed max-w-md mb-9">We help beginners learn modern web skills through simple, practical online courses. Our goal is to make website creation easy, accessible, and confidence-building for everyone. </p>
+                <p class="text-white/65 text-white leading-relaxed max-w-md mb-9">We help beginners learn modern web skills through simple, practical online courses. Our goal is to make website creation easy, accessible, and confidence-building for everyone. </p>
             </div>
         </div>
     </section>
@@ -355,18 +291,18 @@
             <!-- card-4 ends -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm h-full">
-                    <img src="https://images.unsplash.com/vector-1761744512525-0957b7ce9b64?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fGNvbnRhY3QlMjB1c3xlbnwwfHwwfHx8MA%3D%3D" alt="contact form" class="w-full h-full objext-cover">
+                    <img src="https://images.unsplash.com/vector-1761744512525-0957b7ce9b64?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fGNvbnRhY3QlMjB1c3xlbnwwfHwwfHx8MA%3D%3D" alt="contact form" class="w-full h-full object-cover">
                 </div>
                 <div class="bg-white rounded-2xl shadow-sm p-8 flex flex-col relative z-10">
                     <h3 class="font-extrabold text-gray-900 text-xl mb-2">Get in Touch With Us</h3>
                     <p class="text-sm text-red-400 mb-6">* Denotes required Field</p>
                     <div class="flex flex-col gap-4">
                         <div class="flex gap-4">
-                            <input type="text" placeholder="yourFirstName*" id="contactFirstname" class="w-full border border-gray-200 rounded-lg px-3 py-1 text-gray-700 outline-none focus:border-orange-500 transition-colors placeholder-gray-400 required">
-                            <input type="text" placeholder="yourLastName" id="contactLastname" class="w-full border border-gray-200 rounded-lg px-3 py-1 text-gray-700 outline-none focus:border-orange-500 transition-colors placeholder-gray-400">
+                            <input type="text" placeholder="yourFirstName*"  id="contactFirstname" class="w-full border border-gray-200 rounded-lg px-3 py-1 text-gray-700 outline-none focus:border-orange-500 transition-colors placeholder-gray-400"required>
+                            <input type="text" placeholder="yourLastName" id="contactLastname" class="w-full border border-gray-200 rounded-lg px-3 py-1 text-gray-700 outline-none focus:border-orange-500 transition-colors placeholder-gray-400" required>
                         </div>
                         <div>
-                            <input type="email" placeholder="yourEmailAddress" id="contactemail" class="w-full border border-gray-200 rounded-lg px-3 py-1 text-gray-700 outline-none  focus:border-orange-500 transition-colors placeholder-gray-400">
+                            <input type="email" placeholder="yourEmailAddress" id="contactemail" class="w-full border border-gray-200 rounded-lg px-3 py-1 text-gray-700 outline-none  focus:border-orange-500 transition-colors placeholder-gray-400" required>
                         </div>
                         <div>
                             <input type="text" placeholder="Subject" id="contact-subject" class="w-full border border-gray-200 rounded-lg px-3 py-1 text-gray-700 outline-none focus:border-orange-500 transition-colors placeholder-gray-400">
@@ -384,7 +320,7 @@
     </section>
 
     <!-- cards of become a tutor -->
-    <div class="px-6 md:px-10 lg:px-16 gap-6 mb-10">
+    <div class="px-6 md:px-10 lg:px-16 gap-6 mb-10 pb-20 ">
         <div class="container mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- card 1 -->
@@ -426,7 +362,7 @@
     <!-- card to become a tutor ends -->
      <!-- maps -->
       <div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14131.234865021012!2d85.3260898590088!3d27.692306355959733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19e908b36f51%3A0x6bdb7054ec60a79d!2sEyeplex%20Mall!5e0!3m2!1sen!2snp!4v1777287675037!5m2!1sen!2snp" width="1600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14131.234865021012!2d85.3260898590088!3d27.692306355959733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19e908b36f51%3A0x6bdb7054ec60a79d!2sEyeplex%20Mall!5e0!3m2!1sen!2snp!4v1777287675037!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     <!-- footer -->
     <footer class="relative bg-[#1a1a2e] text-gray-400 ">

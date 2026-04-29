@@ -22,6 +22,17 @@
     }
     menuBtn.addEventListener("click", openMenu);
     closeBtn.addEventListener("click", closeMenu);
+    // =================active color on click on navlink========================
+    const allLinks = document.querySelectorAll(".nav-link");
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+allLinks.forEach(link => {
+  const linkPage = link.getAttribute("href");
+  link.classList.remove("active", "text-orange-500", "font-semibold");
+  if (linkPage === currentPage) {
+    link.classList.add("active", "text-orange-500", "font-semibold");
+    link.classList.remove("text-white", "text-gray-800", "text-white/80");
+  }
+});
 // =============scroll===============
 const navbar = document.getElementById("navbar");
 const links = document.querySelectorAll(".nav-link");
@@ -31,10 +42,12 @@ window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
         navbar.classList.add("bg-white/90", "backdrop-blur-md", "shadow-md");
         navbar.classList.remove("text-white");
-        links.forEach(link => {
-            link.classList.remove("text-white/80", "text-white");
-            link.classList.add("text-gray-800");
-        });
+       links.forEach(link => {
+    if (!link.classList.contains("active")) {
+        link.classList.remove("text-white/80", "text-white");
+        link.classList.add("text-gray-800");
+    }
+});
         if (logoText) {
             logoText.classList.remove("text-white");
             logoText.classList.add("text-gray-900");
@@ -46,9 +59,11 @@ window.addEventListener("scroll", () => {
         navbar.classList.remove("bg-white/90", "backdrop-blur-md", "shadow-md");
         navbar.classList.add("text-white");
         links.forEach(link => {
-            link.classList.remove("text-gray-800");
-            link.classList.add("text-white/80");
-        });
+    if (!link.classList.contains("active")) {
+        link.classList.remove("text-gray-800");
+        link.classList.add("text-white/80");
+    }
+});
         if (logoText) {
             logoText.classList.remove("text-gray-900");
             logoText.classList.add("text-white");
