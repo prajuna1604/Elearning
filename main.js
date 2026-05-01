@@ -93,9 +93,9 @@ function animateCounter(id, endValue, duration = 2000) {
 }
 // Run on page load (refresh)
 window.addEventListener("load", () => {
-    animateCounter("stat-professors", 335);
+    animateCounter("stat-professors", 12);
     animateCounter("stat-hours", 750);
-    animateCounter("stat-material", 725);
+    animateCounter("stat-material", 100);
     animateCounter("stat-students", 500);
 });
 // ==============switch tabs============
@@ -187,3 +187,25 @@ prevBtnIns.addEventListener("click",()=>{
         behaviour:"smooth"
     });
 });
+// faq about section
+const faqItems = document.querySelectorAll(".faq-item");
+faqItems.forEach((item) => {
+  const button = item.querySelector("button");
+  const answer = item.querySelector(".faq-answer");
+  const chevron = item.querySelector(".faq-chevron");
+
+  button.addEventListener("click", () => {
+    const isOpen = !answer.classList.contains("hidden");
+// close all
+    faqItems.forEach((el) => {
+      el.querySelector(".faq-answer").classList.add("hidden");
+      el.querySelector(".faq-chevron").classList.remove("rotate-180");
+    });
+// if close open
+    if (!isOpen) {
+      answer.classList.remove("hidden");
+      chevron.classList.add("rotate-180");
+    }
+  });
+});
+//==================== single course==================
