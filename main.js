@@ -23,13 +23,32 @@
     menuBtn.addEventListener("click", openMenu);
     closeBtn.addEventListener("click", closeMenu);
     // =================active color on click on navlink========================
-    const allLinks = document.querySelectorAll(".nav-link");
-const currentPage = window.location.pathname.split("/").pop() || "index.html";
+   const allLinks = document.querySelectorAll(".nav-link");
+
+// normalize current path
+let currentPage = window.location.pathname.split("/").pop();
+
+// fix root case
+if (currentPage === "" || currentPage === "/") {
+  currentPage = "index.html";
+}
+
+currentPage = currentPage.toLowerCase();
+
 allLinks.forEach(link => {
-  const linkPage = link.getAttribute("href");
+  let linkPage = link.getAttribute("href");
+
+  if (!linkPage) return;
+
+  linkPage = linkPage.toLowerCase();
+
+  // remove old styles
   link.classList.remove("active", "text-orange-500", "font-semibold");
+
   if (linkPage === currentPage) {
     link.classList.add("active", "text-orange-500", "font-semibold");
+
+    // remove conflicting colors
     link.classList.remove("text-white", "text-gray-800", "text-white/80");
   }
 });
