@@ -23,40 +23,30 @@
     menuBtn.addEventListener("click", openMenu);
     closeBtn.addEventListener("click", closeMenu);
     // =================active color on click on navlink========================
-   const allLinks = document.querySelectorAll(".nav-link");
+ const allLinks = document.querySelectorAll(".nav-link");
 
 // normalize current path
 let currentPage = window.location.pathname.split("/").pop();
-
-// fix root case
-if (currentPage === "" || currentPage === "/") {
+if (!currentPage || currentPage === "") {
   currentPage = "index.html";
 }
-
-currentPage = currentPage.toLowerCase();
-
+// remove query params if any
+currentPage = currentPage.split("?")[0].split("#")[0];
 allLinks.forEach(link => {
   let linkPage = link.getAttribute("href");
-
   if (!linkPage) return;
-
-  linkPage = linkPage.toLowerCase();
-
-  // remove old styles
-  link.classList.remove("active", "text-orange-500", "font-semibold");
-
+  linkPage = linkPage.split("/").pop().split("?")[0].split("#")[0];
   if (linkPage === currentPage) {
-    link.classList.add("active", "text-orange-500", "font-semibold");
-
-    // remove conflicting colors
-    link.classList.remove("text-white", "text-gray-800", "text-white/80");
+    link.classList.add("text-orange-500", "font-semibold");
+    link.classList.remove("text-white", "text-white/80", "text-gray-800");
+  } else {
+    link.classList.remove("text-orange-500", "font-semibold");
   }
 });
 // =============scroll===============
 const navbar = document.getElementById("navbar");
 const links = document.querySelectorAll(".nav-link");
 const logoText = navbar.querySelector("span");
-const logoIcon=navbar.querySelectorAll(".logo-icon");
 window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
         navbar.classList.add("bg-white/90", "backdrop-blur-md", "shadow-md");
@@ -71,9 +61,6 @@ window.addEventListener("scroll", () => {
             logoText.classList.remove("text-white");
             logoText.classList.add("text-gray-900");
         }
-         if (logoIcon) {
-            logoIcon.setAttribute("fill", "#000000");
-        }
     } else {
         navbar.classList.remove("bg-white/90", "backdrop-blur-md", "shadow-md");
         navbar.classList.add("text-white");
@@ -86,9 +73,6 @@ window.addEventListener("scroll", () => {
         if (logoText) {
             logoText.classList.remove("text-gray-900");
             logoText.classList.add("text-white");
-        }
-        if (logoIcon) {
-            logoIcon.setAttribute("fill", "#FFFFFF");
         }
     }
 });
@@ -197,13 +181,13 @@ const scrollAmount=250;
 nextBtnIns.addEventListener("click",()=>{
     carouselIns1.scrollBy({
         left:scrollAmount,
-        behaviour:"smooth"
+        behavior:"smooth"
     });
 });
 prevBtnIns.addEventListener("click",()=>{
     carouselIns1.scrollBy({
         left:-scrollAmount,
-        behaviour:"smooth"
+        behavior:"smooth"
     });
 });
 // faq about section
@@ -228,3 +212,4 @@ faqItems.forEach((item) => {
   });
 });
 //==================== single course==================
+
