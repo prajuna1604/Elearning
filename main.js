@@ -96,10 +96,12 @@ function animateCounter(id, endValue, duration = 2000) {
 }
 // Run on page load (refresh)
 window.addEventListener("load", () => {
+  if(document.getElementById("stat-professors")){
     animateCounter("stat-professors", 12);
     animateCounter("stat-hours", 750);
     animateCounter("stat-material", 100);
     animateCounter("stat-students", 500);
+  }
 });
 // ==============switch tabs============
 const tabs = document.querySelectorAll(".tab-btn");
@@ -124,71 +126,79 @@ tabs.forEach((tab) => {
 });
 //============carousel fetured section==================
 document.addEventListener("DOMContentLoaded", () => {
+
+  // ===== MAIN CAROUSEL =====
   const track = document.getElementById("carousel");
-  if (!track) return;
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
-  const cards = track.children;
-  let autoSlide;
-  // get card width dynamically (important for responsive)
-  function getScrollAmount() {
-    if (!cards.length) return 300;
-    const card = cards[0];
-    const styles = window.getComputedStyle(card);
-    const gap = 20; // your gap-5 = 20px
-    return card.offsetWidth + gap;
-  }
-  function slide(direction) {
-    const amount = getScrollAmount();
-    track.scrollBy({
-      left: direction * amount,
-      behavior: "smooth"
-    });
-  }
-  // buttons
-  nextBtn?.addEventListener("click", () => slide(1));
-  prevBtn?.addEventListener("click", () => slide(-1));
-  // auto slide
-  function startAutoSlide() {
-    stopAutoSlide();
-    autoSlide = setInterval(() => {
-      const maxScroll = track.scrollWidth - track.clientWidth;
 
-      if (track.scrollLeft >= maxScroll - 10) {
-        track.scrollTo({ left: 0, behavior: "smooth" });
-      } else {
-        slide(1);
-      }
-    }, 3000);
+  let autoSlide;
+
+  if (track) {
+
+    function getScrollAmount() {
+      const card = track.children[0];
+      if (!card) return 300;
+      return card.offsetWidth + 20;
+    }
+
+    function slide(dir) {
+      track.scrollBy({
+        left: dir * getScrollAmount(),
+        behavior: "smooth"
+      });
+    }
+
+    nextBtn?.addEventListener("click", () => slide(1));
+    prevBtn?.addEventListener("click", () => slide(-1));
+
+    function startAuto() {
+      stopAuto();
+      autoSlide = setInterval(() => {
+        const max = track.scrollWidth - track.clientWidth;
+
+        if (track.scrollLeft >= max - 10) {
+          track.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          slide(1);
+        }
+      }, 3000);
+    }
+
+    function stopAuto() {
+      clearInterval(autoSlide);
+    }
+
+    track.addEventListener("mouseenter", stopAuto);
+    track.addEventListener("mouseleave", startAuto);
+
+    startAuto();
   }
-  function stopAutoSlide() {
-    clearInterval(autoSlide);
+
+  // ===== INSTRUCTOR CAROUSEL =====
+  const carouselIns1 = document.getElementById("instructor-carousel");
+  const prevBtnIns = document.getElementById("prev-btn1");
+  const nextBtnIns = document.getElementById("next-btn1");
+
+  const scrollAmount = 250;
+
+  if (carouselIns1 && prevBtnIns && nextBtnIns) {
+    nextBtnIns.addEventListener("click", () => {
+      carouselIns1.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth"
+      });
+    });
+
+    prevBtnIns.addEventListener("click", () => {
+      carouselIns1.scrollBy({
+        left: -scrollAmount,
+        behavior: "smooth"
+      });
+    });
+
   }
-  // pause on hover 
-  track.addEventListener("mouseenter", stopAutoSlide);
-  track.addEventListener("mouseleave", startAutoSlide);
-  prevBtn?.addEventListener("mouseenter", stopAutoSlide);
-  nextBtn?.addEventListener("mouseenter", stopAutoSlide);
-  prevBtn?.addEventListener("mouseleave", startAutoSlide);
-  nextBtn?.addEventListener("mouseleave", startAutoSlide);
-  startAutoSlide();
-});
-// ==========carousel instructor=============
-const carouselIns1=document.getElementById("instructor-carousel");
-const prevBtnIns=document.getElementById("prev-btn1");
-const nextBtnIns=document.getElementById("next-btn1");
-const scrollAmount=250;
-nextBtnIns.addEventListener("click",()=>{
-    carouselIns1.scrollBy({
-        left:scrollAmount,
-        behavior:"smooth"
-    });
-});
-prevBtnIns.addEventListener("click",()=>{
-    carouselIns1.scrollBy({
-        left:-scrollAmount,
-        behavior:"smooth"
-    });
+
 });
 // faq about section
 const faqItems = document.querySelectorAll(".faq-item");
@@ -212,4 +222,76 @@ faqItems.forEach((item) => {
   });
 });
 //==================== single course==================
+document.addEventListener("DOMContentLoaded", () => {
+  const chapterItems = document.querySelectorAll(".chapter-item");
+  const toggleAllBtn = document.getElementById("toggle-all");
+
+  if (!chapterItems.length) return;
+
+  let allOpen = false;
+
+  function closeAll() {
+    chapterItems.forEach(item => {
+      const body = item.querySelector(".chapter-body");
+      const icon = item.querySelector(".chapter-chevron");
+
+      if (!body) return;
+
+      body.classList.add("hidden");
+      icon?.classList.remove("rotate-180");
+    });
+
+    allOpen = false;
+    if (toggleAllBtn) toggleAllBtn.textContent = "Expand All Sections";
+  }
+
+  function openAll() {
+    chapterItems.forEach(item => {
+      const body = item.querySelector(".chapter-body");
+      const icon = item.querySelector(".chapter-chevron");
+
+      if (!body) return;
+
+      body.classList.remove("hidden");
+      icon?.classList.add("rotate-180");
+    });
+
+    allOpen = true;
+    if (toggleAllBtn) toggleAllBtn.textContent = "Close All Sections";
+  }
+
+  // single open behavior
+  chapterItems.forEach(item => {
+    const header = item.querySelector(".chapter-header");
+    const body = item.querySelector(".chapter-body");
+    const icon = item.querySelector(".chapter-chevron");
+
+    if (!header || !body) return;
+
+    header.addEventListener("click", () => {
+      const isOpen = !body.classList.contains("hidden");
+
+      // close all first (enforces single open rule)
+      chapterItems.forEach(i => {
+        i.querySelector(".chapter-body")?.classList.add("hidden");
+        i.querySelector(".chapter-chevron")?.classList.remove("rotate-180");
+      });
+
+      // reopen clicked one if it was closed
+      if (!isOpen) {
+        body.classList.remove("hidden");
+        icon?.classList.add("rotate-180");
+      }
+    });
+  });
+
+  // toggle all button
+  toggleAllBtn?.addEventListener("click", () => {
+    if (allOpen) {
+      closeAll();
+    } else {
+      openAll();
+    }
+  });
+});
 

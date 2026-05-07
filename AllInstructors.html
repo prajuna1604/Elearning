@@ -20,7 +20,7 @@
 </head>
 <body class="font-Sora overflow-x-hidden">
     <!-- navbar and hero section -->
-    <section class="relative flex flex-col min-h-screen bg-[url('https://plus.unsplash.com/premium_photo-1661663340820-970940a9ef2f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG9ubGluZSUyMGFjYWRlbXl8ZW58MHx8MHx8fDA%3D')] bg-cover bg-center ">
+    <section class="relative flex flex-col min-h-screen bg-[url('https://images.unsplash.com/photo-1712904116125-e82aaa92ea7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fG9ubGluZSUyMEluc3RydWN0b3J8ZW58MHx8MHx8fDA%3D')] bg-cover bg-center ">
         <!-- black overlay -->
         <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30 pointer-events-none"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none">
@@ -213,255 +213,77 @@
         <!-- hero section starts -->
         <div class="relative z-10 flex flex-1 px-6 md:px-10 lg:px-16 items-center justify-center w-full pt-32">
             <div class="container mx-auto">
-                <h1 class="font-bold text-white leading-tight tracking-tight text-5xl md:text-6xl mb-5">All Courses</h1>
+                <h1 class="font-bold text-white leading-tight tracking-tight text-5xl md:text-6xl mb-5">All Instructors</h1>
                 <p class="text-white/65 text-white leading-relaxed max-w-md mb-9">We help beginners learn modern web skills through simple, practical online courses. Our goal is to make website creation easy, accessible, and confidence-building for everyone. </p>
             </div>
         </div>
     </section>
-    <!-- courses section -->
+    <!-- instructor card -->
      <section class="bg-white py-16 px-6 md:px-10 lg:px-16 gap-6">
         <div class="container mx-auto">
-            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
-                <p class="text-gray-500 text-sm font-medium">Showing <span class="text-gray-900 font-bold">6 course</span></p>
-                <div class="relative w-full sm:w-64">
-                    <input type="text" placeholder="Enter topic" class="w-full bg-white border border-gray-200 rounded-xl pl-4 pr-10 py-3 text-sm text-gray-700 placeholder-gray-400 outline-none focus:border-orange-500 transition-colors shadow-sm">
-                     <svg class="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-      </svg>
+             <div class="text-center mb-10">
+                <div class="inline-flex items-center gap-2 text-orange-500 text-xs font-semibold tracking-widest uppercase mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8622a">
+                        <path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z" />
+                    </svg>
+                    Popular Courses
                 </div>
+                <h2 class="font-bold text-gray-900 text-3xl md:text-4xl tracking-tight">Most Loved Courses in 2026</h2>
             </div>
-            <!-- couryses grid starts -->
-             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-                <div class="course-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden ">
-                    <div class="relative overflow-hidden h-48 group">
-                        <img src="https://images.unsplash.com/photo-1624953587687-daf255b6b80a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHl0aG9ufGVufDB8fDB8fHww" alt="coursesgrid" class="img-card w-full h-full object-cover">
-                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300"></div>
-                       <!-- READ MORE BUTTON -->
-                        <a href="#python"class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <span class="text-white px-5 py-2 rounded-full font-semibold text-sm ">Read More</span>
-                         </a>
-                        <button class="heart-btn absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow text-gray-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg> 
-                       </button>
-                <!-- <span class="badge absolute top-3 left-3 text-[#ff6b6b] bg-white text-sm px-3 py-1 rounded-full uppercase tracking-wide">Python</span> -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-col-4 gap-6">
+                <!-- card1 starts -->
+                <div class="instrucor-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1665791566018-53cb5476910b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fG9ubGluZSUyMGluc3RydWN0b3J8ZW58MHx8MHx8fDA%3D" alt="Anthony wade"  class="instructor-image w-full h-full object-cover object-top">
                     </div>
-                    <div class="p-4">
-                         <span class="text-white bg-[#e8622a] text-sm px-3 py-1 rounded-full uppercase tracking-wide">Python </span>
-                        <h3 class="font-bold text-gray-900 text-[16px] leading-snug mb-3 mt-3">Learn machine learning practically With python</h3>
-                        <div class="flex items-center gap-4 mb-3 text-xs text-gray-500">
-                        <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/></svg>
-                            72 students
-                        </span>
-                        <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg>
-                            62 lessons
-                        </span>
-                         
-                        </div>
-                        <div class="border-t border-gray-100 pt-3 flex items-center justify-between">
-                            <span class="font-bold text-gray-900 text-lg">$95</span>
-                            <div class="flex items-center gap-2">
-                                <img src="https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8fDB8fHww" alt="img1" class="w-6 h-6 rounded-full object-cover">
-                                <span class="text-gray-500 text-sm">Jane smith</span>
-                            </div>
-                        </div>
+                    <div class="p-5">
+                        <span class="text-[12px] font-bold tracking-widest uppercase text-orange-500 mb-1 block">HTML/CSS Instructor</span>
+<h3 class="font-bold text-gray-900 text-lg mb-2">Anthony wade</h3>
+<p class="text-gray-400 text-xs leading-relaxed mb-5">Anthony is a passionate web developer with expertise in modern HTML and CSS. Her hands-on teaching style makes learning web design engaging, fun, and practical</p>
+<a href="#" class="flex view-more text-gray-500 text-xs font-semibold">Read more
+    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#999999"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+</a>
                     </div>
                 </div>
-                <!-- card1 ends -->
-                   <div class="course-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden ">
-                    <div class="relative overflow-hidden h-48 group">
-                        <img src="https://media.istockphoto.com/id/2166320051/photo/api-application-programming-interface-concept-a-programmer-types-on-a-laptop-interacting-with.webp?a=1&b=1&s=612x612&w=0&k=20&c=8EiEs1YqOVRG6lJTZVD-dICovmJ-gGUbLyhresUkU-g=" alt="coursesgrid" class="img-card w-full h-full object-cover">
-                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300"></div>
-                       <!-- READ MORE BUTTON -->
-                        <a href="#programming"class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <span class="text-white px-5 py-2 rounded-full font-semibold text-sm ">Read More</span>
-                         </a>
-                        <!-- <span class="badge absolute top-3 left-3 text-[#ff6b6b] bg-white text-sm px-3 py-1 rounded-full uppercase tracking-wide">Programmming</span> -->
-                        <button class="heart-btn absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow text-gray-400">
-<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg> 
-                       </button>
+                <!-- card 2 starts -->
+                 <div class="instructor-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1576267443888-219e7358f757?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fE1hcmtldGluZyUyMGluc3RydWN0b3J8ZW58MHx8MHx8fDA%3D" alt="instructor2" class="instructor-image w-full h-full object-cover object-top">
                     </div>
-                    <div class="p-4">
-                     <span class="text-white bg-[#e8622a] text-sm px-3 py-1 rounded-full uppercase tracking-wide">Programming </span>
-                        <h3 class="font-bold text-gray-900 text-[16px] leading-snug mb-3 mt-3">The Ultimate Guide to Building a RESTful API</h3>
-                        <div class="flex items-center gap-4 mb-3 text-xs text-gray-500">
-                        <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/></svg>
-                            62 students
-                        </span>
-                        <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg>
-                            45 lessons
-                        </span>
-                        </div>
-                        <div class="border-t border-gray-100 pt-3 flex items-center justify-between">
-                            <span class="font-bold text-gray-900 text-lg">$110</span>
-                            <div class="flex items-center gap-2">
-                                <img src="https://images.unsplash.com/photo-1654110455429-cf322b40a906?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXZhdGFyfGVufDB8fDB8fHww" alt="img1" class="w-6 h-6 rounded-full object-cover">
-                                <span class="text-gray-500 text-sm">Diago Herdandiz</span>
-                            </div>
-                        </div>
+                    <div class="p-5">
+                        <span class="text-[12px] font-bold tracking-widest uppercase text-orange-500 mb-1 block">Marketing Instructor</span>
+                        <h3 class="font-bold text-gray-900 text-lg mb-2">Miachel Morgan</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-5">Miachel is is a renowned marketing expert who helps students craft compelling content. His practical techniques help learners understand, apply, and excel in modern marketing. </p>
+                        <a href="#" class="flex view-more text-gray-500 text-xs font-semibold">Read more
+    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#999999"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+</a>
                     </div>
-                </div>
-                <!-- card2 ends -->
-                   <div class="course-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden ">
-                    <div class="relative overflow-hidden h-48 group">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGlnaXRhbCUyMG1hcmtldGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="coursesgrid" class="img-card w-full h-full object-cover">
-                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300"></div>
-                       <!-- READ MORE BUTTON -->
-                        <a href="#Marketing"class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <span class="text-white px-5 py-2 rounded-full font-semibold text-sm ">Read More</span>
-                         </a>
-                        <!-- <span class="badge absolute top-3 left-3 text-[#ff6b6b] bg-white text-sm px-3 py-1 rounded-full uppercase tracking-wide">Finance</span> -->
-                        <button class="heart-btn absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow text-gray-400">
-<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg> 
-                       </button>
-                    </div>
-                    <div class="p-4">
-                        <span class="text-white bg-[#e8622a] text-sm px-3 py-1 rounded-full uppercase tracking-wide">Marketing </span>
-                        <h3 class="font-bold text-gray-900 text-[16px] leading-snug mb-3 mt-3">Mastering Digital Marketing Strategies</h3>
-                        <div class="flex items-center gap-4 mb-3 text-xs text-gray-500">
-                        <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/></svg>
-                             82 students
-                        </span>
-                        <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg>
-                            32 lessons
-                        </span>
+                     </div>
+                    <!-- card-3 starts -->
+                     <div class="instructor-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                        <div class="overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1733222764429-5fcd683c4b7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fHBocCUyMGluc3RydWN0b3J8ZW58MHx8MHx8fDA%3D" alt="instructor3" class="instructor-image w-full h-full object-cover object-top">
                         </div>
-                        <div class="border-t border-gray-100 pt-3 flex items-center justify-between">
-                            <span class="font-bold text-gray-900 text-lg">$55</span>
-                            <div class="flex items-center gap-2">
-                                <img src="https://images.unsplash.com/photo-1701615004837-40d8573b6652?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D" alt="img1" class="w-6 h-6 rounded-full object-cover">
-                                <span class="text-gray-500 text-sm">Alex suprun</span>
-                            </div>
+                        <div class="p-5">
+                            <span class="text-[12px] font-bold tracking-widest uppercase text-orange-500 mb-1 block">Php instructor</span>
+                            <h3 class="font-bold text-gray-900 text-lg mb-2 ">Bruce stevens</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed mb-5"> Bruce is a seasoned PHP developer whose lessons blend dynamic coding skills, modern design patterns, and best practices for building functional web applications.</p>
+                            <a href="#" class="flex view-more text-gray-500 text-xs font-semibold">Read more
+    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#999999"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+</a>
                         </div>
-                    </div>
-                </div>
-                <!-- card3 ends -->
-                  <div class="course-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden ">
-                    <div class="relative overflow-hidden h-48 group">
-                        <img src="https://media.istockphoto.com/id/1474751544/photo/website-admins-using-seo-tools-to-get-their-websites-ranked-in-top-search-rankings-in-search.webp?a=1&b=1&s=612x612&w=0&k=20&c=0ocPr-r22-uswWquXarEhaZmZ8FCpkmWH3Jl6aU2UDo=" alt="coursesgrid" class="img-card w-full h-full object-cover">
-                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300"></div>
-                       <!-- READ MORE BUTTON -->
-                        <a href="#SEO"class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <span class=" text-white px-5 py-2 rounded-full font-semibold text-sm ">Read More</span>
-                         </a>
-                        <!-- <span class="badge absolute top-3 left-3 text-[#ff6b6b] bg-white text-sm px-3 py-1 rounded-full uppercase tracking-wide">SEO</span> -->
-                        <button class="heart-btn absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow text-gray-400">
-<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg> 
-                       </button>
-                    </div>
-                    <div class="p-4">
-            <span class="text-white bg-[#e8622a] text-sm px-3 py-1 rounded-full uppercase tracking-wide">SEO </span>
-                        <h3 class="font-bold text-gray-900 text-[16px] leading-snug mb-3 mt-3">SEO as the Core of Your New Business Venture</h3>
-                        <div class="flex items-center gap-4 mb-3 text-xs text-gray-500">
-                        <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/></svg>
-                            45 students
-                        </span>
-                        <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg>
-                            48 lessons
-                        </span>
-                        </div>
-                        <div class="border-t border-gray-100 pt-3 flex items-center justify-between">
-                            <span class="font-bold text-gray-900 text-lg">$45</span>
-                            <div class="flex items-center gap-2">
-                                <img src="https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8fDB8fHww" alt="img1" class="w-6 h-6 rounded-full object-cover">
-                                <span class="text-gray-500 text-sm">DEV. Mausam</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 4 ends -->
-                  <div class="course-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden ">
-                    <div class="relative overflow-hidden h-48 group">
-                        <img src="https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2ViJTIwYXBwbGljYXRpb24lMjBkZXZlbG9wbWVudHxlbnwwfHwwfHx8MA%3D%3D" alt="coursesgrid" class="img-card w-full h-full object-cover">
-                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300"></div>
-                       <!-- READ MORE BUTTON -->
-                        <a href="#Appdevelopment"class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <span class=" text-white px-5 py-2 rounded-full font-semibold text-sm ">Read More</span>
-                         </a>
-                        <!-- <span class="badge absolute top-3 left-3 text-[#ff6b6b] bg-white text-sm px-3 py-1 rounded-full uppercase tracking-wide">App Development</span> -->
-                        <button class="heart-btn absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow text-gray-400">
-<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg> 
-                       </button>
-                    </div>
-                    <div class="p-4">
-                 <span class="text-white bg-[#e8622a] text-sm px-3 py-1 rounded-full uppercase tracking-wide">App Development </span>
-                        <h3 class="font-bold text-gray-900 text-[16px] leading-snug mb-3 mt-3">The complete guide to build application</h3>
-                        <div class="flex items-center gap-4 mb-3 text-xs text-gray-500">
-                        <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/></svg>
-                            98 students
-                        </span>
-                        <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg>
-                            54 lessons
-                        </span>
-                        </div>
-                        <div class="border-t border-gray-100 pt-3 flex items-center justify-between">
-                            <span class="font-bold text-gray-900 text-lg">$67</span>
-                            <div class="flex items-center gap-2">
-                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXZhdGFyfGVufDB8fDB8fHww" alt="img1" class="w-6 h-6 rounded-full object-cover">
-                                <span class="text-gray-500 text-sm">Jake Nackos</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 5ends -->
-                  <div class="course-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden ">
-                    <div class="relative overflow-hidden h-48 group">
-                        <img src="https://images.unsplash.com/photo-1758873271321-4d6b3526ef42?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvamVjdCUyMG1hbmFnZW1lbnQlMjBhbmFseXNpc3xlbnwwfHwwfHx8MA%3D%3D" alt="coursesgrid" class="img-card w-full h-full object-cover">
-                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300"></div>
-                       <!-- READ MORE BUTTON -->
-                        <a href="#project"class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <span class="text-white px-5 py-2 rounded-full font-semibold text-sm ">Read More</span>
-                         </a>
-                        <!-- <span class="badge absolute top-3 left-3 text-[#ff6b6b] bg-white text-sm px-3 py-1 rounded-full uppercase tracking-wide">Python</span> -->
-                        <button class="heart-btn absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow text-gray-400">
-<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg> 
-                       </button>
-                    </div>
-                    <div class="p-4">
-                    <span class="text-white bg-[#e8622a] text-sm px-3 py-1 rounded-full uppercase tracking-wide">project </span>
-                        <h3 class="font-bold text-gray-900 text-[16px] leading-snug mb-3 mt-3">Project Management Analysis</h3>
-                        <div class="flex items-center gap-4 mb-3 text-xs text-gray-500">
-                        <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/></svg>
-                            32 students
-                        </span>
-                        <span class="flex items-center gap-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg>
-                            37 lessons
-                        </span>
-                        </div>
-                        <div class="border-t border-gray-100 pt-3 flex items-center justify-between">
-                            <span class="font-bold text-gray-900 text-lg">$50</span>
-                            <div class="flex items-center gap-2">
-                                <img src="https://plus.unsplash.com/premium_photo-1658527049634-15142565537a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXZhdGFyfGVufDB8fDB8fHww" alt="img1" class="w-6 h-6 rounded-full object-cover">
-                                <span class="text-gray-500 text-sm ">Frank flores</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- card 6 ends -->
-             </div>
+                 </div>
+                 <!-- card-3 ends -->
+            </div>
         </div>
      </section>
-      <!-- expert instructors -->
+     <!-- expert instructors -->
       <section class="bg-white py-16  px-6 md:px-10 lg:px-16 gap-6">
         <div class="container mx-auto">
             <div class="text-center mb-10">
-                <div
-                    class="inline-flex items-center gap-2 text-orange-500 text-xs font-semibold tracking-widest uppercase mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#e8622a">
-                        <path
-                            d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z" />
+                <div class="inline-flex items-center gap-2 text-orange-500 text-xs font-semibold tracking-widest uppercase mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8622a">
+                        <path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z" />
                     </svg>
                     Popular Instructors
                 </div>
@@ -1043,4 +865,5 @@
     <!-- footer section ends -->
     <script src="main.js"></script>
 </body>
+
 </html>
