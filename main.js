@@ -37,10 +37,10 @@ allLinks.forEach(link => {
   if (!linkPage) return;
   linkPage = linkPage.split("/").pop().split("?")[0].split("#")[0];
   if (linkPage === currentPage) {
-    link.classList.add("text-orange-500", "font-semibold");
-    link.classList.remove("text-white", "text-white/80", "text-gray-800");
+    link.classList.add("active","text-orange-500", "font-semibold");
+    link.classList.remove("text-gray-700", "text-white/80", "text-gray-800");
   } else {
-    link.classList.remove("text-orange-500", "font-semibold");
+    link.classList.remove("active","text-orange-500", "font-semibold");
   }
 });
 // =============scroll===============
@@ -63,16 +63,16 @@ window.addEventListener("scroll", () => {
         }
     } else {
         navbar.classList.remove("bg-white/90", "backdrop-blur-md", "shadow-md");
-        navbar.classList.add("text-white");
+        navbar.classList.add("text-gray-900");
         links.forEach(link => {
     if (!link.classList.contains("active")) {
-        link.classList.remove("text-gray-800");
-        link.classList.add("text-white/80");
+        link.classList.add("text-gray-800");
+        link.classList.remove("text-white/80");
     }
 });
         if (logoText) {
-            logoText.classList.remove("text-gray-900");
-            logoText.classList.add("text-white");
+            logoText.classList.add("text-gray-900");
+            logoText.classList.remove("text-white");
         }
     }
 });
@@ -84,7 +84,6 @@ function animateCounter(id, endValue, duration = 2000) {
     const increment = endValue / (duration / 16); // ~60fps
     function updateCounter() {
         startValue += increment;
-
         if (startValue >= endValue) {
             element.textContent = endValue;
         } else {
@@ -126,22 +125,17 @@ tabs.forEach((tab) => {
 });
 //============carousel fetured section==================
 document.addEventListener("DOMContentLoaded", () => {
-
   // ===== MAIN CAROUSEL =====
   const track = document.getElementById("carousel");
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
-
   let autoSlide;
-
   if (track) {
-
     function getScrollAmount() {
       const card = track.children[0];
       if (!card) return 300;
       return card.offsetWidth + 20;
     }
-
     function slide(dir) {
       track.scrollBy({
         left: dir * getScrollAmount(),
@@ -156,7 +150,6 @@ document.addEventListener("DOMContentLoaded", () => {
       stopAuto();
       autoSlide = setInterval(() => {
         const max = track.scrollWidth - track.clientWidth;
-
         if (track.scrollLeft >= max - 10) {
           track.scrollTo({ left: 0, behavior: "smooth" });
         } else {
@@ -164,14 +157,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }, 3000);
     }
-
     function stopAuto() {
       clearInterval(autoSlide);
     }
-
     track.addEventListener("mouseenter", stopAuto);
     track.addEventListener("mouseleave", startAuto);
-
     startAuto();
   }
 
@@ -181,7 +171,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextBtnIns = document.getElementById("next-btn1");
 
   const scrollAmount = 250;
-
   if (carouselIns1 && prevBtnIns && nextBtnIns) {
     nextBtnIns.addEventListener("click", () => {
       carouselIns1.scrollBy({

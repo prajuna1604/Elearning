@@ -19,15 +19,10 @@
     </style>
 </head>
 <body class="font-Sora overflow-x-hidden">
-    <!-- navbar and hero section -->
-     <section class="relative flex flex-col min-h-screen bg-[url('https://images.unsplash.com/photo-1712904124115-92f9bf39072d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNpbmdsZSUyMG9ubGluZSUyMGNvdXJzZXN8ZW58MHx8MHx8fDA%3D')] bg-cover bg-center ">
-        <!-- black overlay -->
-        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30 pointer-events-none"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none">
-        </div>
-        <!-- black ovrelay ends -->
+   <!-- navbar and hero section -->
+   <section class="relative flex flex-col overflow-hidden">
         <!-- navbar starts -->
-        <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-10 lg:px-16 z-10 transition-all duration-300">
+        <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-10 lg:px-16 transition-all duration-300">
             <div class="container mx-auto flex items-center justify-between">
                 <a href="#" class="flex items-center gap-2">
                     <div class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center shrink-0">
@@ -35,20 +30,19 @@
                             <path d="M360-400h260q42 0 71-29.5t29-71.5q0-42-30-71t-72-29q-8-51-47-85t-91-34q-41 0-75 22t-51 59q-48 2-81 36.5T240-520q0 50 35 85t85 35Zm0-80q-17 0-28.5-11.5T320-520q0-17 11.5-28.5T360-560h50v-10q0-29 20.5-49.5T480-640q29 0 49.5 20.5T550-570v50h70q8 0 14 6t6 14q0 8-6 14t-14 6H360Zm-40 360v-80h80v-80H160q-33 0-56.5-23.5T80-360v-400q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v400q0 33-23.5 56.5T800-280H560v80h80v80H320ZM160-360h640v-400H160v400Zm0 0v-400 400Z" />
                         </svg>
                     </div>
-                    <span class="font-bold text-white text-lg tracking-tight">SkillBloom</span>
+                    <span class="font-bold text-lg  text-gray-900 tracking-tight">SkillBloom</span>
                 </a>
-                <!-- desktoop ul links starts-->
                 <ul class="hidden md:flex items-center gap-5">
-                    <li><a href="index.html" class="nav-link relative text-white/80 hover:text-orange-500 text-lg font-medium transition-colors duration-200 flex items-center gap-1">Home</a> </li>
+                    <li><a href="index.html" class="nav-link relative text-gray-700 hover:text-orange-500 text-lg font-medium transition-colors duration-200 flex items-center gap-1">Home</a> </li>
                     <li class="dropdown-trigger relative group">
-                        <a href="Courses.html" class="nav-link relative text-white/80 hover:text-orange-500 text-lg font-medium transition-colors duration-200 flex items-center gap-1">All Courses
+                        <a href="Courses.html" class="nav-link relative text-gray-700 hover:text-orange-500 text-lg font-medium transition-colors duration-200 flex items-center gap-1">All Courses
                             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
                                 <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
                             </svg>
                          </a>
                         <!-- dropsown starts -->
                         <div class="absolute top-full left-3/2 -translate-x-1/2 w-[980px] bg-white rounded-2xl shadow-2xl border border-gray-100 z-[999] overflow-hidden opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-all duration-300">     
-                           <div class="grid grid-cols-3 divide-x divide-gray-100">
+                           <div class="grid grid-cols-1 md:grid-cols-3 divide-x divide-gray-100">
                                 <div class="col-span-2 p-5 grid grid-cols-2 gap-x-2 gap-y-1">
                                     <div>
                                         <p class="text-gray-400 text-[12px] uppercase tracking-widest font-semibold px-3 mb-2"> Pages</p>
@@ -162,18 +156,20 @@
                         </div>
                         <!-- dropdown ends -->
                     </li>
-                    <li><a href="aboutus.html" class="nav-link relative text-white/80 hover:text-orange-500 text-lg font-medium transition-colors duration-200 flex items-center gap-1">About us</a></li>
-                    <li><a href="Instructor.html" class="nav-link relative text-white/80 hover:text-orange-500 text-lg font-medium transition-colors duration-200 flex items-center gap-1">Instuctors</a></li>
-                    <li><a href="Blog.html" class="nav-link relative text-white/80 hover:text-orange-500 text-lg font-medium transition-colors duration-200 flex items-center gap-1">Blog
+                    <li><a href="aboutus.html" class="nav-link relative text-gray-700 hover:text-orange-500 text-lg font-medium transition-colors duration-200 flex items-center gap-1">About us</a></li>
+                    <li><a href="Instructor.html" class="nav-link relative text-gray-700 hover:text-orange-500 text-lg font-medium transition-colors duration-200 flex items-center gap-1">Instuctors</a></li>
+                    <li><a href="Blog.html" class="nav-link relative text-gray-700 hover:text-orange-500 text-lg font-medium transition-colors duration-200 flex items-center gap-1">Blog
                             <!-- <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
                                 <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
                             </svg> --></a></li>
-                    <li><a href="contact.html" class="nav-link relative text-white/80 hover:text-orange-500 text-lg font-medium transition-colors duration-200 flex items-center gap-1">Contact</a> </li>
+                    <li><a href="contact.html" class="nav-link relative text-gray-700 hover:text-orange-500 text-lg font-medium transition-colors duration-200 flex items-center gap-1">Contact</a> </li>
                 </ul>
                 <!-- menubbar icon starts -->
                 <div class="flex items-center gap-3">
-                    <a href="#" class="hidden sm:inline-block bg-orange-500 hover:bg-orange-600 text-white text-lg font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:-translate-y-px">Enroll Now</a>
-                    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-1" aria-label="Open menu">
+ <a href="#" class="flex gap-1 bg-orange-500 hover:bg-orange-600 text-white items-center font-semibold text-sm px-6  py-3 rounded-xl transition-all duration-200 hover:-translate-y-px shadow-lg shadow-orange-500/25">Login
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/></svg>    
+              </a>
+          <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-1" aria-label="Open menu">
                         <span class="block w-6 h-0.5 bg-current rounded"></span>
                         <span class="block w-6 h-0.5 bg-current rounded"></span>
                         <span class="block w-6 h-0.5 bg-current rounded"></span>
@@ -184,7 +180,7 @@
         </nav>
         <!-- navbar ends for destop view -->
         <!-- Mobile menu starts -->
-       <div id="mobile-menu" class="hidden fixed inset-0 z-[60] bg-black/90 flex-col px-6 pt-10 gap-5 opacity-0 scale-95 transition-all duration-300 ">
+       <div id="mobile-menu" class="hidden fixed inset-0 z-[60] bg-white flex-col px-6 pt-10 gap-5 opacity-0 scale-95 transition-all duration-300 ">
             <div class="flex items-center justify-between">
                 <a href="#" class="flex items-center gap-2">
                     <div class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center shrink-0">
@@ -192,42 +188,50 @@
                             <path d="M360-400h260q42 0 71-29.5t29-71.5q0-42-30-71t-72-29q-8-51-47-85t-91-34q-41 0-75 22t-51 59q-48 2-81 36.5T240-520q0 50 35 85t85 35Z" />
                         </svg>
                     </div>
-                    <span class="font-bold text-white text-white tracking-tight">SkillBloom</span>
+                    <span class="font-bold text-gray-900 tracking-tight">SkillBloom</span>
                 </a>
-                <button id="close-menu" class="text-white/70 hover:text-white transition-colors ">
+                <button id="close-menu" class="text-gray-900 hover:text-orange-500 transition-colors ">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#FFFFFF">
+                        fill="#currentColor">
                         <path d="m336-280-56-56 144-144-144-143 56-56 144 144 143-144 56 56-144 143 144 144-56 56-143-144-144 144Z" />
                     </svg>
                 </button>
             </div>
-            <a href="index.html" class="nav-link text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">Home</a>
-            <a href="Courses.html" class="nav-link text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">All courses</a>
-            <a href="aboutus.html" class="nav-link text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">About us</a>
-            <a href="Instructor.html" class="nav-link text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">Instructors</a>
-            <a href="Blog.html" class="nav-link text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">Blog</a>
-            <a href="contact.html" class="nav-link text-sm font-bold text-white/70 hover:text-orange-500 transition-colors">contact</a>
-            <a href="#" class="mt-4 self-start bg-orange-500 hover:bg-orange-600 text-white font-semibold text-white px-6 py-3 rounded-lg transition-colors">Start Learning</a>
+            <a href="index.html" class="nav-link text-sm font-bold text-gray-900 hover:text-orange-500 transition-colors">Home</a>
+            <a href="Courses.html" class="nav-link text-sm font-bold text-gray-900 hover:text-orange-500 transition-colors">All courses</a>
+            <a href="aboutus.html" class="nav-link text-sm font-bold text-gray-900 hover:text-orange-500 transition-colors">About us</a>
+            <a href="Instructor.html" class=" nav-link text-sm font-bold text-gray-900 hover:text-orange-500 transition-colors">Instructors</a>
+            <a href="Blog.html" class="nav-link text-sm font-bold text-gray-900 hover:text-orange-500 transition-colors">Blog</a>
+            <a href="contact.html" class="nav-link text-sm font-bold text-gray-900 hover:text-orange-500 transition-colors">contact</a>
+            <a href="#" class="mt-4 self-start bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors">Start Learning</a>
         </div>
         <!-- moble menu ends  -->
         <!-- hero section starts -->
-        <div class="relative z-10 flex flex-1 px-6 md:px-10 lg:px-16 items-center justify-center w-full pt-32">
-            <div class="container mx-auto">
-                <h1 class="font-bold text-white leading-tight tracking-tight text-5xl md:text-6xl mb-5">Single Instructor</h1>
-                <p class="text-white/65 text-white leading-relaxed max-w-md mb-9">We help beginners learn modern web skills through simple, practical online courses. Our goal is to make website creation easy, accessible, and confidence-building for everyone. </p>
+         <!-- Breadcrumb nav starts here -->
+<div class="relative z-10 pt-28 px-6 md:px-10 lg:px-16">
+  <div class="container mx-auto">
+     <div class="flex items-center gap-2 text-xs text-gray-400 mb-5">
+                <a href="#" class="hover:text-orange-500 transition-colors">Home</a>
+                <span>/</span>
+                <a href="#" class="hover:text-orange-500 transition-colors">Instructors</a>
+                <span>/</span>
+                <span class="text-gray-600 font-medium">Instructor 1</span>
             </div>
-        </div>
+  </div>
+</div>
+<!-- breadcrumbs ends here -->
+<!-- Hero heading + CTA buttons -->
+<div class="relative z-10 px-6 md:px-10 lg:px-16 mt-6">
+  <div class="container mx-auto border-l-orange-500 border-l-8 pl-4">
+    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-3 ">Single Instructor</h1>
+    <p class="text-gray-500 text-xl italic leading-relaxed max-w-2xl mb-6">We help beginners learn modern web skills through simple, practical online courses. Our goal is to make website creation easy, accessible, and confidence-building for everyone.</p>
+  </div>
+</div>  
+<!-- hero section ends -->
     </section>
     <!--single instructor  -->
     <section class="bg-white py-16 px-6 md:px-10 lg:px-16">
         <div class="container mx-auto ">
-            <div class="flex items-center gap-2 text-xs text-gray-400 mb-5">
-                <a href="#" class="hover:text-orange-500 transition-colors">Home</a>
-                <span>/</span>
-                <a href="#" class="hover:text-orange-500 transition-colors">Courses</a>
-                <span>/</span>
-                <span class="text-gray-600 font-medium">Introduction to Python</span>
-            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="lg:col-span-2">
                     <div class="flex items-start justify-between gap-4 mb-2">
@@ -245,19 +249,19 @@
             <!-- stats bar -->
              <div class="flex flex-wrap items-center gap-5 text-xs text-gray-500 mb-7 mt-5 border-b border-gray-100 pb-6">
                 <span class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M607.5-372.5Q660-425 660-500t-52.5-127.5Q555-680 480-680t-127.5 52.5Q300-575 300-500t52.5 127.5Q405-320 480-320t127.5-52.5Zm-204-51Q372-455 372-500t31.5-76.5Q435-608 480-608t76.5 31.5Q588-545 588-500t-31.5 76.5Q525-392 480-392t-76.5-31.5ZM214-281.5Q94-363 40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200q-146 0-266-81.5ZM480-500Zm207.5 160.5Q782-399 832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280q113 0 207.5-59.5Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="M607.5-372.5Q660-425 660-500t-52.5-127.5Q555-680 480-680t-127.5 52.5Q300-575 300-500t52.5 127.5Q405-320 480-320t127.5-52.5Zm-204-51Q372-455 372-500t31.5-76.5Q435-608 480-608t76.5 31.5Q588-545 588-500t-31.5 76.5Q525-392 480-392t-76.5-31.5ZM214-281.5Q94-363 40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200q-146 0-266-81.5ZM480-500Zm207.5 160.5Q782-399 832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280q113 0 207.5-59.5Z"/></svg>
                <strong class="text-gray-900">90</strong>Viiews
                 </span>
                 <span class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M160-160v-320h160v320H160Zm240 0v-640h160v640H400Zm240 0v-440h160v440H640Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="M160-160v-320h160v320H160Zm240 0v-640h160v640H400Zm240 0v-440h160v440H640Z"/></svg>
                     <strong class="text-gray-900">All Levels</strong>
                 </span>
                 <span class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M160-391h45l23-66h104l24 66h44l-97-258h-46l-97 258Zm81-103 38-107h2l38 107h-78Zm319-70v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-600q-38 0-73 9.5T560-564Zm0 220v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-380q-38 0-73 9t-67 27Zm0-110v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-490q-38 0-73 9.5T560-454ZM260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-499Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="M160-391h45l23-66h104l24 66h44l-97-258h-46l-97 258Zm81-103 38-107h2l38 107h-78Zm319-70v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-600q-38 0-73 9.5T560-564Zm0 220v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-380q-38 0-73 9t-67 27Zm0-110v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-490q-38 0-73 9.5T560-454ZM260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-499Z"/></svg>
                     <strong class="text-gray-900">3</strong>Lessons
                 </span>
                 <span class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="m160-419 101-101-101-101L59-520l101 101Zm540-21 100-160 100 160H700Zm-220-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-160q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640Zm0 40ZM0-240v-63q0-44 44.5-70.5T160-400q13 0 25 .5t23 2.5q-14 20-21 43t-7 49v65H0Zm240 0v-65q0-65 66.5-105T480-450q108 0 174 40t66 105v65H240Zm560-160q72 0 116 26.5t44 70.5v63H780v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5Zm-320 30q-57 0-102 15t-53 35h311q-9-20-53.5-35T480-370Zm0 50Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="m160-419 101-101-101-101L59-520l101 101Zm540-21 100-160 100 160H700Zm-220-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-160q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640Zm0 40ZM0-240v-63q0-44 44.5-70.5T160-400q13 0 25 .5t23 2.5q-14 20-21 43t-7 49v65H0Zm240 0v-65q0-65 66.5-105T480-450q108 0 174 40t66 105v65H240Zm560-160q72 0 116 26.5t44 70.5v63H780v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5Zm-320 30q-57 0-102 15t-53 35h311q-9-20-53.5-35T480-370Zm0 50Z"/></svg>
                     <strong class="text-gray-900">30</strong>Students
                 </span>
              </div>
@@ -277,7 +281,7 @@
                 <div class="chapter-item">
                     <div class="chapter-header flex items-center justify-between px-6 py-3 cursor-pointer">
                         <div class="flex items-center gap-3">
-                            <svg class="chapter-chevron transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                            <svg class="chapter-chevron transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
                             <span class="font-bold text-gray-800 text-sm">Chapter-1</span>
                         </div>
                         <div class="flex items-center justify-end gap-3">
@@ -319,7 +323,7 @@
                  <div class="chapter-item border-t border-gray-200">
                     <div class="chapter-header flex items-center justify-between px-6 py-3 cursor-pointer">
                     <div class="flex items-center gap-3">
-                    <svg class="chapter-chevron transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                    <svg class="chapter-chevron transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
                     <span class="font-bold text-gray-800 text-sm">Introduction</span>
                     </div>
                     <div class="flex items-center justify-end gap-3">
@@ -346,26 +350,26 @@
                 <div id="featured-section" class="featureopen">
                     <button class="chapter-header w-full flex items-center justify-between px-6 py-3 bg-white hover:bg-gray transition-colors">
                    <div class="flex items-center gap-3">
-                            <svg class="chapter-chevron transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                            <svg class="chapter-chevron transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
                             <span class="font-bold text-gray-800 text-sm">Features</span>
                         </div>
                     </button>
                     <div class="chapter-body hidden overflow-hidden transition-all duration-300 ">
                         <ul class="flex flex-col px-5 pb-5 gap-2 pt-2">
                             <li class="flex items-center text-sm text-gray-500 gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
                                 Lifetime access to course materials
                             </li>
                             <li class="flex items-center text-sm text-gray-500 gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
                                 Certificate completion
                             </li>
                              <li class="flex items-center text-sm text-gray-500 gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
                                Access on mobile and desktop
                             </li>
                             <li class="flex items-center text-sm text-gray-500 gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
                             Resources included
                             </li>
                         </ul>
@@ -377,18 +381,18 @@
                 <div id="target-section" class="featureopen">
                     <button class="chapter-header w-full flex items-center justify-between px-6 py-3 bg-white hover:bg-gray transition-colors">
                      <div class="flex items-center gap-3">
-                            <svg class="chapter-chevron transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                            <svg class="chapter-chevron transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
                             <span class="font-bold text-gray-800 text-sm">Targeted audience</span>
                         </div>
                     </button>
                     <div class="chapter-body hidden overflow-hidden  transition-all duration-300">
                         <ul class="flex flex-col px-5 pb-5 gap-2 pt-2">
                             <li class="flex items-center text-sm text-gray-500 gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
                               Students who want to learn Python basics
                             </li>
                             <li class="flex items-center text-sm text-gray-500 gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8622a"><path d="M400-304 240-464l56-56 104 104 264-264 56 56-320 320Z"/></svg>
                                 Developers switching from other languages
                             </li>
                         </ul>
